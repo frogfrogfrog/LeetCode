@@ -1,5 +1,9 @@
 package easy;
-
+/**
+ * 
+ * @author yzx12
+ * merge two sorted list
+ */
 public class MergeTwoSortedLists {
 	public class ListNode {
 		int val;
