@@ -11,7 +11,7 @@ public class InvertBinaryTree {
 	}
 	public TreeNode invertTree(TreeNode root) {
 		if(root==null)
-			//¿ÕÊ÷µÄÇé¿ö
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return null;
 		else{
 			TreeNode temp=root.left;
