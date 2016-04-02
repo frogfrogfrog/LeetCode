@@ -2,6 +2,6 @@ package easy;
 
 public class NimGame {
 	public boolean canWinNim(int n) {
-		return false;
+		return (n&0b11)!=0;
 	}
 }
