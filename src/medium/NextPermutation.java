@@ -7,7 +7,7 @@ package medium;
  */
 public class NextPermutation {
 	public static void main(String[] args){
-		int[] a=new int[]{1,2};
+		int[] a=new int[]{1,3,2};
 		new NextPermutation().nextPermutation(a);
 		for(int i:a){
 			System.out.print(i+",");
