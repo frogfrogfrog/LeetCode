@@ -10,8 +10,8 @@ public class NQueens {
 		res.clear();
 		char[][] ans = new char[n][n];
 		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				ans[i][j] = '.';
+                for (int j = 0; j < n; j++) {
+                ans[i][j] = '.';
 			}
 		}
 		this.findSolotions(new int[4][2 * n + 1], ans, 0, n);

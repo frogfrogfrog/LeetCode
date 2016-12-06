@@ -17,7 +17,7 @@ public class LinkedListCycleII {
 			else
 				return null;
 			if (slow == fast){
-				//头假设为x,相遇的点假设为y，一次各迈一步，最终相遇在起点
+				//澶村亣璁句负x,鐩搁亣鐨勭偣鍋囪涓簓锛屼竴娆″悇杩堜竴姝ワ紝鏈�缁堢浉閬囧湪璧风偣
 				slow=head;
 				while(slow!=fast){
 					slow=slow.next;
