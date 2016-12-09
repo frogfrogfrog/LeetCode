@@ -1,40 +1,41 @@
 package medium;
 
 public class SearchForARange {
-	public int[] searchRange(int[] nums, int target) {
-        int[] res=new int[2];
-        res[0]=res[1]=-1;
-        int left=0,right=nums.length-1;
-        //ÒªÓÐ"="ºÅ£¬·ÀÖ¹Ö»ÓÐÒ»¸öÔªËØµÄÇé¿ö
-        while(left<=right){
-        	int mid=(left+right)/2;
-        	if(nums[mid]==target){
-        		res[0]=res[1]=mid;
-        		int i=mid-1;
-        		while(i>=0 && nums[i]==target){
-        			res[0]=i;
-        			i--;
-        		}
-        		i=mid+1;
-        		while(i<=nums.length-1 && nums[i]==target){
-        			res[1]=i;
-        			i++;
-        		}
-        		break;
-        	}
-        	if(nums[mid]<target){
-        		left=mid+1;
-        		continue;
-        	}
-        	if(nums[mid]>target){
-        		right=mid-1;
-        		continue;
-        	}
+    public int[] searchRange(int[] nums, int target) {
+        int[] res = new int[2];
+        res[0] = res[1] = -1;
+        int left = 0, right = nums.length - 1;
+        //Òªï¿½ï¿½"="ï¿½Å£ï¿½ï¿½ï¿½Ö¹Ö»ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½ï¿½ï¿½
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] == target) {
+                res[0] = res[1] = mid;
+                int i = mid - 1;
+                while (i >= 0 && nums[i] == target) {
+                    res[0] = i;
+                    i--;
+                }
+                i = mid + 1;
+                while (i <= nums.length - 1 && nums[i] == target) {
+                    res[1] = i;
+                    i++;
+                }
+                break;
+            }
+            if (nums[mid] < target) {
+                left = mid + 1;
+                continue;
+            }
+            if (nums[mid] > target) {
+                right = mid - 1;
+                continue;
+            }
         }
         return res;
     }
-	public static void main(String[] args){
-		
-	}
-	
+
+    public static void main(String[] args) {
+
+    }
+
 }

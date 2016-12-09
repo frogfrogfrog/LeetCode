@@ -1,7 +1,7 @@
 package easy;
 
 public class NimGame {
-	public boolean canWinNim(int n) {
-		return (n&0b11)!=0;
-	}
+    public boolean canWinNim(int n) {
+        return (n & 0b11) != 0;
+    }
 }
