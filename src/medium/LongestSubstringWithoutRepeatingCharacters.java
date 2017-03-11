@@ -21,4 +21,9 @@ public class LongestSubstringWithoutRepeatingCharacters {
         }
         return max;
     }
+
+    public static void main(String[] args) {
+        String s = "beacadghi";
+        new LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(s);
+    }
 }
