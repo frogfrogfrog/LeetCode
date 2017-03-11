@@ -22,6 +22,7 @@ public class Mahjong {
         System.out.println(canWin(test3));
         System.out.println(canWin(test4));
         System.out.println(canWin(test5));
+
     }
 
     public static boolean canWin(int[] cards) {
