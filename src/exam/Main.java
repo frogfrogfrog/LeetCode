@@ -50,7 +50,6 @@ public class Main {
         int B = Integer.parseInt(strs[1]);
         int K = Integer.parseInt(strs[2]);
 
-
     }
 
 }
